@@ -1,0 +1,55 @@
+Página/seção,Erro,Logado?,Tester,Observações
+Checkout,Imagens cortando e a esquerda,Sim,Erik,Resolvido
+PdP,Frete na PdP não é refletido no checkout e vc precisa colocar ele novamente,Não,Rafael Rezende,
+Checkout,Texto da entrega não está alinhado a direita,Sim,Erik,Ajustado
+Carrinho,Gramatura zerada dos produtos no carrinho,Sim e não,Erik e Rafa,
+Carrinho,"Desconto aparecendo correto e depois dele aparece R$ 0,00",Sim e não,Erik e Rafa,
+Login,Login está redirecionando pro site em produção - é aquele hard redirect server side da vtex?,Não,Erik,"Resolvido - Se o redirect tiver rolando para lojabauducco.com.br/login, isso será resolvido ao fazer o golive"
+PdP,"Qual o comportamento do seletor de tamanho quando o produto tem apenas 1 tamanho? Poderiamos não mostrar a opção, podemos trazer selecionado ou o usuario poderia selecionar mesmo sendo apenas uma opção. Hoje não acontece nada e acho que é a pior opção.",Sim e não,Rafa,
+,,,,
+Login,"Janela ""É um prazer te ver novamente"" com formatação quebrada",Sim,Erik,Ajustado
+PdP/Carrinho,"Calcula o frete na PDP, adiciona o produto no carrinho, mas o preço não vai. ",Não,Rafa,"obs. Só dá esse erro na primeira navegação. Se calcular uma vez o frete dentro do carrinho, passa a funcionar normal."
+Checkout,Página de checkout (https://bauducco.deco.site/checkout#/cart) - botão de menos (-) não funciona quando tem apenas uma unidade no carrinho,Não,Rafa,Acontece a mesma coisa em prod
+Checkout,Checkout com desconto de cashback não está funcionando. A tela final fica loading e nada acontece...,Sim,Rafa,Como eu reproduzo?
+Meus pedidos,Link para Meus pedidos na página de confirmação de compra redireciona para página com erro,Sim,rafa,
+Checkout,Giftback está quebrando a ordem dos blocos,Sim,Rafa,Como reproduzo?
+Carrinho,"A porcentagem de desconto está desalinhada junto ao box
+de seleção de quantidade",Sim,Erik,
+Meus dados,"Meus dados não carrega no mobile, só no desktop",Sim,Erik,
+Minha conta,Botão de pedidos fica a direita da tela escondido,Sim,Erik,
+Carrinho,Botão e campo de cupom não aparecem,Sim,Erik,
+Carrinho,"Clientes PJ estão podendo mudar o tipo de conta, e isso não pode acontecer",Sim,Erik,
+,,,,
+,,,,
+,,,,
+Pdp,Algumas páginas não estão mostrando o seletor de quantidade:,,rafa,
+,https://bauducco.deco.site/grissini-azeite-oliva-bauducco-150g/p?skuId=898,,rafa,
+,https://bauducco.deco.site/pao-de-graos-classicos-bauducco-390g/p?skuId=839,,rafa,
+,https://bauducco.deco.site/pao-de-hamburguer-10-200g/p?skuId=848,,rafa,
+,https://bauducco.deco.site/pao-de-forma-bauducco-tradicional-390g/p?skuId=841,,rafa,
+,https://bauducco.deco.site/pao-briochine-bauducco-200g-p-1/p?skuId=874,,rafa,
+,,,rafa,
+PdP,Algumas páginas não mostram o seletor de tamanho,,rafa,
+,https://bauducco.deco.site/biscoito-bauducco-recheado-duplo-chocolate-108g/p?skuId=869,,rafa,
+,https://bauducco.deco.site/biscoito-bauducco-recheado-baunilha-108g-/p?skuId=870,,rafa,
+,https://bauducco.deco.site/caixa-bauducco-choco-pipoca-70g-12-unid/p?skuId=933,,rafa,
+,https://bauducco.deco.site/wafer-morango-bauducco-92g/p?skuId=885,,rafa,
+,https://bauducco.deco.site/wafer-chocolate-com-avela-bauducco-92g/p?skuId=884,,rafa,
+,https://bauducco.deco.site/wafer-chocolate-bauducco-92g/p?skuId=861,,rafa,
+,https://bauducco.deco.site/biscoito-banana-com-canela-bauducco-354g/p?skuId=882,,rafa,
+,https://bauducco.deco.site/biscoito-speculoos-bauducco-84g/p?skuId=883,,rafa,
+,https://bauducco.deco.site/biscoito-bellastella-bauducco-320g/p?skuId=895,,rafa,
+,https://bauducco.deco.site/biscoito-buongrano-bauducco-320g/p?skuId=896,,rafa,
+,https://bauducco.deco.site/caixa-biscoito-wafer-avela-e-creme-bauducco-20g-p/p?skuId=940,,rafa,
+,https://bauducco.deco.site/chocobiscuit-ao-leite-bauducco-pote-360g/p?skuId=938,,rafa,
+,https://bauducco.deco.site/caixa-bauducco-croissant-chocolate-45g-48-und/p?skuId=897,,rafa,
+,https://bauducco.deco.site/pao-chips-90g-12-und/p?skuId=931,,rafa,
+,https://bauducco.deco.site/chocottone-gotas-e-cobertura-bauducco-450g-18-unidades/p?skuId=122,,rafa,
+,https://bauducco.deco.site/caixa-bauducco-mini-chocottone-enfeite-lata-8-und-/p?skuId=927,,rafa,
+,,,rafa,
+,,,rafa,
+PdP,Páginas sem seletor de tamanho e quantidade,,rafa,
+,https://bauducco.deco.site/caixa-bauducco-biscoito-pascoa-90g-16-unid/p?skuId=942,,rafa,
+,https://bauducco.deco.site/panettone-bites-bauducco-107g-15-unidades/p?skuId=293,,rafa,
+,,,rafa,
+PdP,"Rever cadastro do produto. Peso sem o ""g"" - https://bauducco.deco.site/batata-pringles-original-134g/p?skuId=901",,rafa,
