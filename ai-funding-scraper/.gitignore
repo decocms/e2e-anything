@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.db-shm
+*.db-wal
+*.sqlite-shm
+*.sqlite-wal
+.claude/worktrees/

@@ -1,0 +1,26 @@
+{
+  "name": "ai-funding-scraper",
+  "version": "1.0.0",
+  "description": "Multi-source scraper for AI-native startup funding rounds (Series A+)",
+  "scripts": {
+    "dev": "bun --hot src/api/index.ts",
+    "scrape": "bun src/index.ts",
+    "scrape:jobs": "bun src/jobs/index.ts",
+    "add-companies": "bun src/add-companies.ts",
+    "find-recruiters": "bun src/jobs/recruiter-finder.ts",
+    "find-recruiters:apollo": "bun src/jobs/apollo-recruiter-search.ts",
+    "outreach": "bun src/outreach/generate.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "exa-js": "^2.8.0",
+    "node-html-parser": "^6.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "bun-types": "latest"
+  }
+}
