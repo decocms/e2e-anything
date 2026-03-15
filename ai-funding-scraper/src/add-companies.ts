@@ -159,6 +159,18 @@ const MANUAL_COMPANIES: ManualCompany[] = [
     sectors: ["Artificial Intelligence", "Enterprise", "LLM"],
     description: "Enterprise AI platform. Secure access to multiple LLMs with data privacy for enterprises.",
   },
+  {
+    name: "Dify",
+    website: "https://dify.ai",
+    sectors: ["Artificial Intelligence", "LLM", "Open Source", "AI Agents", "Enterprise"],
+    description: "Open-source platform for building and deploying AI workflows and applications. LLM app development platform with visual orchestration, RAG, and agent capabilities.",
+  },
+  {
+    name: "Humand",
+    website: "https://humand.co",
+    sectors: ["HR Tech", "SaaS", "Artificial Intelligence", "Enterprise"],
+    description: "AI-powered employee experience platform for HR management, internal communication, talent development, and company culture. Used by 1,500+ companies connecting 1.6M employees.",
+  },
 ];
 
 async function addManualCompanies() {
