@@ -1,0 +1,69 @@
+name: "Casa e Video - Produção"
+baseUrl: "https://www.casaevideo.com.br"
+
+pages:
+  home: "/"
+  category: "/tv-e-video"
+  product: "/smart-tv-led-32-philco-ptv32cra/p"
+  cart: "/checkout"
+  login: "/login"
+  myAccount: "/my-account"
+  search: "/search"
+
+testData:
+  searchTerm: "televisão"
+  cep: "20040-020"
+  newsletterEmail: "teste-qa-casaevideo@example.com"
+
+selectors:
+  # Header
+  searchInput: "input[placeholder='Buscar por produto ou marca...']"
+  searchButton: "button:has-text('Search')"
+  menuNav: "header nav"
+  menuLinks: "header nav a"
+  cartButton: "button:has-text('open cart')"
+  loginButton: "button:has-text('Entre ou cadastre-se'), a[href*='login'], button:has-text('Bem vindo')"
+  geoButton: "button:has-text('Ver ofertas para a região')"
+
+  # Product Listing (PLP)
+  productCard: "a[href*='/p']"
+  productCardLink: "a[href*='/p']"
+  productCardTitle: "a[href*='/p'] h2, a[href*='/p'] h3"
+  productCardPrice: "a[href*='/p'] :text('R$')"
+  sortSelect: "select, [role='combobox']"
+  filtersContainer: "[role='complementary'], aside"
+  filterGroup: "[role='complementary'] li, aside li"
+  paginationNext: "a:has-text('next page link'), a[href*='page=2']"
+
+  # Product Detail (PDP)
+  pdpTitle: "h1"
+  pdpPrice: ":text('R$')"
+  pdpImage: "img[alt*='Smart'], img[alt*='TV'], section img"
+  addToCartButton: "button:has-text('Comprar agora')"
+  quantityInput: "input[type='number']"
+  quantityPlus: "button:has-text('Aumentar quantidade')"
+  quantityMinus: "button:has-text('Diminuir quantidade')"
+  skuSelector: "a[href*='skuId']"
+  wishlistButton: "button:has-text('Add to wishlist')"
+
+  # Cart / Minicart
+  minicartOverlay: "[role='dialog'], [data-minicart], :text('Produtos Adicionados')"
+  cartItemName: "h3, h4"
+  cartItemQuantity: "input[type='number']"
+  cartItemRemove: "button:has-text('Remover'), button[aria-label*='remove'], button[aria-label*='delete']"
+  couponInput: "input[placeholder*='cupom'], input[placeholder*='Cupom'], input[name*='coupon']"
+  couponButton: "button:has-text('Aplicar')"
+  checkoutButton: "a:has-text('Ir para o carrinho'), a:has-text('Finalizar'), button:has-text('Finalizar')"
+
+  # Newsletter
+  newsletterInput: "input[placeholder*='e-mail'], input[placeholder*='Digite seu e-mail'], input[type='email']"
+  newsletterButton: "button:has-text('Cadastrar')"
+
+  # Chat
+  chatWidget: "iframe[src*='chat'], [class*='chat'], [id*='zendesk'], [id*='intercom']"
+
+  # Footer
+  footer: "footer, [role='contentinfo']"
+  footerLinks: "footer a, [role='contentinfo'] a"
+
+skip: []
