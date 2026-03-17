@@ -1,0 +1,69 @@
+name: "Casa e Vídeo"
+baseUrl: "https://www.casaevideo.com.br"
+
+pages:
+  home: "/"
+  category: "/tv-e-video"
+  product: "/smart-tv-led-32-philco-ptv32cra/p"
+  cart: "/checkout"
+  login: "/login"
+  myAccount: "/my-account"
+  search: "/search"
+
+testData:
+  searchTerm: "televisão"
+  cep: "20040-020"
+  newsletterEmail: "teste-qa-casaevideo@example.com"
+
+selectors:
+  # Header
+  searchInput: "input[placeholder*='Buscar'], input[type='search'], input[placeholder*='buscar']"
+  searchButton: "button[type='submit']:near(input[type='search']), button:has-text('Search'), button:has-text('Buscar')"
+  menuNav: "header nav, nav[role='navigation']"
+  menuLinks: "header nav a, nav[role='navigation'] a"
+  cartButton: "button:has-text('open cart'), [data-cart-button], button[aria-label*='cart'], a[href*='cart'], a[href*='carrinho']"
+  loginButton: "button:has-text('Entre ou cadastre-se'), button:has-text('Bem vindo'), a[href*='login'], button:has-text('Entrar'), button:has-text('Minha Conta')"
+  geoButton: "button:has-text('Ver ofertas para a região'), button:has-text('CEP'), button:has-text('Informe seu CEP')"
+
+  # Product Listing (PLP)
+  productCard: "a[href*='/p']"
+  productCardLink: "a[href*='/p']"
+  productCardTitle: "a[href*='/p'] h2, a[href*='/p'] h3, a[href*='/p'] span"
+  productCardPrice: "a[href*='/p'] :text('R$'), [data-price]"
+  sortSelect: "select, [role='combobox'], [data-sort]"
+  filtersContainer: "[role='complementary'], aside, [data-filters]"
+  filterGroup: "[role='complementary'] li, aside li"
+  paginationNext: "a:has-text('next page link'), a[href*='page=2'], a:has-text('Próximo'), a[aria-label*='next']"
+
+  # Product Detail (PDP)
+  pdpTitle: "h1"
+  pdpPrice: ":text('R$'), [data-price]"
+  pdpImage: "img[alt*='Smart'], img[alt*='TV'], section img, [data-gallery] img"
+  addToCartButton: "button:has-text('Comprar agora'), button:has-text('Comprar'), button:has-text('Adicionar'), [data-add-to-cart]"
+  quantityInput: "input[type='number'], input[aria-label*='Quantidade']"
+  quantityPlus: "button:has-text('Aumentar quantidade'), button:has-text('+')"
+  quantityMinus: "button:has-text('Diminuir quantidade'), button:has-text('-')"
+  skuSelector: "a[href*='skuId'], [data-sku-selector]"
+  wishlistButton: "button[aria-label*='wishlist'], button:has-text('wishlist'), button:has-text('favorit'), button[aria-label*='favorit']"
+
+  # Cart / Minicart
+  minicartOverlay: "[role='dialog'], [data-minicart], :text('Produtos Adicionados'), [data-cart-drawer]"
+  cartItemName: "h3, h4, [data-item-name]"
+  cartItemQuantity: "input[type='number'], [data-item-quantity]"
+  cartItemRemove: "button:has-text('Remover'), button[aria-label*='remove'], button[aria-label*='delete'], [data-remove-item]"
+  couponInput: "input[placeholder*='cupom'], input[placeholder*='Cupom'], input[name*='coupon']"
+  couponButton: "button:has-text('Aplicar'), [data-coupon-button]"
+  checkoutButton: "a:has-text('Ir para o carrinho'), a:has-text('Finalizar'), button:has-text('Finalizar'), [data-checkout]"
+
+  # Newsletter
+  newsletterInput: "input[placeholder*='e-mail'], input[placeholder*='Email'], input[placeholder*='Digite seu e-mail'], input[type='email']"
+  newsletterButton: "button:has-text('Cadastrar'), button:has-text('Inscrever')"
+
+  # Chat
+  chatWidget: "iframe[src*='chat'], [class*='chat'], [id*='zendesk'], [id*='intercom'], a[href*='wa.me'], a[href*='whatsapp']"
+
+  # Footer
+  footer: "footer, [role='contentinfo']"
+  footerLinks: "footer a, [role='contentinfo'] a"
+
+skip: []
